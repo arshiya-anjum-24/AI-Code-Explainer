@@ -1,10 +1,14 @@
 import streamlit as st
 import requests
+import os
+from dotenv import load_dotenv
 
-# ======= 🔐 IBM WATSONX CREDENTIALS =======
-IBM_API_KEY = "k4LjZh_aCSZGI0Icp9YwAyWK0sDR7bQfEK16OfGTDTRN"  # Replace with your own key if needed
-PROJECT_ID = "0160a609-0f31-41a3-85a8-091025c10775"
-WATSONX_URL = "https://us-south.ml.cloud.ibm.com"
+# ======= 🌍 LOAD ENV VARIABLES =======
+load_dotenv()
+
+IBM_API_KEY = os.getenv("IBM_API_KEY")
+PROJECT_ID = os.getenv("PROJECT_ID")
+WATSONX_URL = os.getenv("WATSONX_URL")
 
 # ======= 🔑 FETCH IBM IAM TOKEN =======
 @st.cache_resource
