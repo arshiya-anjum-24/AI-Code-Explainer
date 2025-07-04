@@ -19,20 +19,17 @@ This project is a *Streamlit-based web application* that explains code snippets 
 ## 🔧 Setup Instructions
 
 ### 1. Clone the repository
-⁠ bash
 git clone https://github.com/your-username/ai-code-explainer.git
 cd ai-code-explainer
  ⁠
 
 ### 2. Create and activate a virtual environment
-⁠ bash
 python -m venv venv
 source venv/bin/activate      # On Linux/Mac
 venv\Scripts\activate         # On Windows
  ⁠
 
 ### 3. Install dependencies
-⁠ bash
 pip install -r requirements.txt
  ⁠
 
@@ -45,7 +42,6 @@ WATSONX_URL=https://us-south.ml.cloud.ibm.com
 
 
 ### 5. Run the Streamlit app
-⁠ bash
 streamlit run app.py
  ⁠
 
